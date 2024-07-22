@@ -46,7 +46,7 @@ export function deleteTodo({ id }) {
 	})
 }
 
-export function postTodo({ text }) {
+export function postTodo({ text, date }) {
 	return fetch(userURLWithError, {
 		method: 'POST',
 		headers: {
@@ -54,6 +54,7 @@ export function postTodo({ text }) {
 		},
 		body: JSON.stringify({
 			text: text,
+			date: date,
 		}),
 	}).then((response) => {
 		//console.log(response);

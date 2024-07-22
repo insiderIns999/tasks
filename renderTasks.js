@@ -193,6 +193,7 @@ export const renderTasks = ({ fetchAndRenderTasks }) => {
 			
 			postTodo({ 
 				text: textEl.value,
+				date: formatDate(new Date),
 				buttonElement,
 			})
 			.then((response) => {
