@@ -1,0 +1,84 @@
+#list {
+	list-style-type: none;
+}
+
+#list li {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	margin-top: 5px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#list li p, .delete-button {
+	margin: 5px;
+}
+
+.task:hover {
+	background-color: #ccc;
+	transition: 1.5s;
+}
+
+.task:not(:hover) {
+	background-color: #fff;
+	transition: 1.5s;
+}
+
+.error {
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f00;
+	border-radius: 15px;
+}
+
+.delete-button {
+	border: 3px solid #f00;
+	border-radius: 10px;
+	background-color: #1E90FF;
+	color: #fff;
+}
+
+.delete-button:hover {
+	background-color: #0000CD;
+	transition: 2s;
+}
+
+.delete-button:not(:hover) {
+	background-color: #1E90FF;
+	transition: 2s;
+}
+
+.button {
+	background-color: #ff0;
+	border: 3px solid purple;
+	border-radius: 15px;
+	color: #00f;
+	font-weight: bold;
+	padding: 7px 15px;
+}
+
+#add-button:hover {
+	background-color: #00f;
+	color: #ff0;
+}
+
+.button:hover {
+	background-color: #00f;
+	color: #ff0;
+	transition: 2s;
+}
+
+.button:not(:hover) {
+	ackground-color: #ff0;
+	color: #00f;
+	transition: 2s;
+}
+
+.input {
+	border: 2px solid #f00;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 10px 5px;
+	padding-left: 20px;
+}
